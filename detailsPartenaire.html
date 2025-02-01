@@ -1,0 +1,104 @@
+@extends('index')
+
+        
+@section('title', 'details partenaire')
+    
+@section('body')
+    
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container" data-aos="zoom-in-up">
+            <h1>Détails des Partenaires</h1>
+            <p>Explorez en profondeur nos partenaires et leur contribution à notre mission.</p>
+        </div>
+    </div>
+
+    <!-- Partner Details Section -->
+    <div class="container my-5">
+        <!-- Partenaire 1 -->
+        <div class="partner-details mb-5">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-right">
+                    <img src="{{ "images/p3.jpg" }}" alt="Partenaire 1" class="img-fluid">
+                </div>
+                <div class="col-md-8" data-aos="fade-left">
+                    <h2>Partenaire 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet purus ut velit sollicitudin condimentum. Sed at risus vitae velit feugiat tempus.</p>
+                    <div class="info-block">
+                        <h5>Secteur d'activité :</h5>
+                        <p>Technologie et Innovation</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Année de collaboration :</h5>
+                        <p>Depuis 2020</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Réalisations clés :</h5>
+                        <p>Développement d'applications web et solutions Cloud.</p>
+                    </div>
+                    <div class="partenaire-btn">
+                        <a href="#" target="_blank">Visiter leur site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partenaire 2 -->
+        <div class="partner-details mb-5">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                    <img src="{{ "images/p5.jpg" }}" alt="Partenaire 2" class="img-fluid">
+                </div>
+                <div class="col-md-8" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Partenaire 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ex non eros interdum, in fermentum massa suscipit.</p>
+                    <div class="info-block">
+                        <h5>Secteur d'activité :</h5>
+                        <p>Logistique et Transport</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Année de collaboration :</h5>
+                        <p>Depuis 2018</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Réalisations clés :</h5>
+                        <p>Optimisation de la chaîne logistique dans plus de 50 pays.</p>
+                    </div>
+                    <div class="partenaire-btn">
+                        <a href="#" target="_blank">Visiter leur site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partenaire 3 -->
+        <div class="partner-details mb-5">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="600">
+                    <img src="{{ "images/p1.jpg" }}" alt="Partenaire 3" class="img-fluid">
+                </div>
+                <div class="col-md-8" data-aos="fade-left" data-aos-delay="900">
+                    <h2>Partenaire 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum turpis in est dictum, non convallis arcu blandit.</p>
+                    <div class="info-block">
+                        <h5>Secteur d'activité :</h5>
+                        <p>Finance et Investissements</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Année de collaboration :</h5>
+                        <p>Depuis 2015</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Réalisations clés :</h5>
+                        <p>Levée de fonds et accompagnement des startups.</p>
+                    </div>
+                    <div class="partenaire-btn">
+                        <a href="#" target="_blank">Visiter leur site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @endsection

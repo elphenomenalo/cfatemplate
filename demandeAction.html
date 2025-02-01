@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande d'Actionnariat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .form-header h2 {
+            font-weight: bold;
+        }
+        .form-header p {
+            color: #6c757d;
+        }
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <!-- En-tête du formulaire -->
+    <div class="form-header">
+        <h2>Demande d'Actionnariat</h2>
+        <p>Remplissez le formulaire ci-dessous pour soumettre votre candidature en tant qu'actionnaire.</p>
+    </div>
+
+    <!-- Formulaire -->
+    <form action="" method="POST">
+        <!-- Nom complet -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Nom complet <span class="text-danger">*</span></label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom complet" required>
+        </div>
+
+        <!-- Adresse email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Adresse email <span class="text-danger">*</span></label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Votre adresse email" required>
+        </div>
+
+        <!-- Numéro de téléphone -->
+        <div class="mb-3">
+            <label for="phone" class="form-label">Numéro de téléphone <span class="text-danger">*</span></label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Votre numéro de téléphone" required>
+        </div>
+
+        <!-- Montant d'investissement -->
+        <div class="mb-3">
+            <label for="investment" class="form-label">Montant d'investissement proposé (FCFA) <span class="text-danger">*</span></label>
+            <input type="number" id="investment" name="investment" class="form-control" placeholder="Montant en euros" required>
+        </div>
+
+        <!-- Pourquoi souhaitez-vous devenir actionnaire ? -->
+        <div class="mb-3">
+            <label for="motivation" class="form-label">Motivation <span class="text-danger">*</span></label>
+            <textarea id="motivation" name="motivation" class="form-control" rows="4" placeholder="Expliquez pourquoi vous souhaitez devenir actionnaire" required></textarea>
+        </div>
+
+        <!-- Joindre des documents (facultatif) -->
+        <div class="mb-3">
+            <label for="document" class="form-label">Joindre un document (facultatif)</label>
+            <input type="file" id="document" name="document" class="form-control">
+            <small class="text-muted">Formats acceptés : PDF, DOC, DOCX. Taille maximale : 5 Mo.</small>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <div class="d-grid">
+            <button type="submit" class="btn btn-submit">Soumettre la Demande</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
